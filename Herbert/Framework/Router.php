@@ -81,7 +81,7 @@ class Router {
         $this->app = $app;
         $this->http = $http;
 
-        add_action('wp_loaded', [$this, 'flush']);
+        #add_action('wp_loaded', [$this, 'flush']);
         add_action('init', [$this, 'boot']);
         add_action('parse_request', [$this, 'parseRequest']);
     }
